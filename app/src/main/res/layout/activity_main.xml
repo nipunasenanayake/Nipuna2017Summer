@@ -25,18 +25,23 @@
             android:gravity="center" />
 
         <Button
+            android:text="T"
+            android:textColor="@android:color/white"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
-            android:background="@android:color/holo_orange_dark"/>
+            android:background="@drawable/bt_bg"
+            />
 
         <Button
-            android:layout_width="50dp"
+            android:layout_width="55dp"
             android:layout_height="50dp"
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
-            android:background="@android:color/holo_orange_dark"/>
+            android:background="@drawable/bt_icon_bg"
+            android:onClick="login"
+            />
 
     </RelativeLayout>
 
@@ -49,6 +54,7 @@
         android:layout_alignParentStart="true">
         
         <TextView
+            android:id="@+id/activity_tool_demo"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
@@ -67,6 +73,7 @@
         </View>
 
         <TextView
+            android:id="@+id/activity_tool_work"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
@@ -79,13 +86,15 @@
 
     </LinearLayout>
     
-    <ListView
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/fragment_work"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/activity_main_title"
         android:layout_above="@id/activity_main_tool"
         android:background="@android:color/darker_gray">
 
-    </ListView>
+    </LinearLayout>
 
 </RelativeLayout>
