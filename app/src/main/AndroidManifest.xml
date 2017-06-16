@@ -18,7 +18,14 @@
         </activity>
         <activity android:name=".ViewPagerActivity" />
         <activity android:name=".ScaleTypeActivity" />
-        <activity android:name=".Patch9Activity"></activity>
+        <activity android:name=".Patch9Activity" />
+        <activity android:name=".ActivityA" />
+        <activity android:name=".ActivityB" />
+        <activity android:name=".ActivityC" />
+        <activity android:name=".ActivityD" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".AdvanceListViewActivity" />
+        <activity android:name=".LaunchModeActivity"></activity>
     </application>
 
 </manifest>

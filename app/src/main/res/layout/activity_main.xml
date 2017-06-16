@@ -31,6 +31,7 @@
             android:layout_height="50dp"
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12px"
             android:background="@drawable/bt_bg"
             />
 

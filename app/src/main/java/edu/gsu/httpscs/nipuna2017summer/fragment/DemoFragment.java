@@ -13,6 +13,8 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import edu.gsu.httpscs.nipuna2017summer.AdvanceListViewActivity;
+import edu.gsu.httpscs.nipuna2017summer.NotificationActivity;
 import edu.gsu.httpscs.nipuna2017summer.Patch9Activity;
 import edu.gsu.httpscs.nipuna2017summer.R;
 import edu.gsu.httpscs.nipuna2017summer.ScaleTypeActivity;
@@ -34,8 +36,8 @@ contentList = new ArrayList<String>();
         contentList.add("ViewPager");
         contentList.add("ImageScaleType");
         contentList.add("9Patch");
-        contentList.add("A");
-        contentList.add("B");
+        contentList.add("Notification");
+        contentList.add("AdvanceListView");
         contentList.add("C");
         contentList.add("A");
         contentList.add("B");
@@ -78,6 +80,14 @@ contentList = new ArrayList<String>();
                     case 2:
                         Intent intent2 = new Intent(getActivity(), Patch9Activity.class);
                         startActivity(intent2);
+                        break;
+                    case 3:
+                        Intent intent3 = new Intent(getActivity(), NotificationActivity.class);
+                        startActivity(intent3);
+                        break;
+                    case 4:
+                        Intent intent4 = new Intent(getActivity(), AdvanceListViewActivity.class);
+                        startActivity(intent4);
                         break;
 
                     default:
