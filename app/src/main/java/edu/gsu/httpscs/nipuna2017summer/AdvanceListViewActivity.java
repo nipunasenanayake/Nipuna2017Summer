@@ -14,7 +14,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import edu.gsu.httpscs.nipuna2017summer.adapter.AdvanceListViewAdapter;
 
-public class AdvanceListViewActivity extends AppCompatActivity {
+public class AdvanceListViewActivity extends BaseActivity {
 
     @BindView(R.id.activity_advance_list_view) ListView lv;
 
@@ -25,7 +25,16 @@ public class AdvanceListViewActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         ArrayList<String> list = new ArrayList<String>();
-        list.add("AAAAA");
+        list.add("Hello");
+        list.add("Hello, how are you");
+        list.add("I am fine,thank you ");
+        list.add("then");
+        list.add("then");
+        list.add("then");
+        list.add("then");
+        list.add("then");
+        list.add("then");
+
 
         AdvanceListViewAdapter adapter = new AdvanceListViewAdapter(this,list);
         lv.setAdapter(adapter);
@@ -38,12 +47,12 @@ public class AdvanceListViewActivity extends AppCompatActivity {
         TextView tv1 = new TextView(this);
         tv1.setText("HeaderView");
         tv1.setTextSize(50);
-        lv.addHeaderView(tv1);
+        lv.addFooterView(tv1);
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(AdvanceListViewActivity.this, String.valueOf(position), Toast.LENGTH_SHORT).show();
+                showToast(String.valueOf(position));
             }
         });
 

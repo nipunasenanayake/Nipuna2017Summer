@@ -14,6 +14,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 import edu.gsu.httpscs.nipuna2017summer.AdvanceListViewActivity;
+import edu.gsu.httpscs.nipuna2017summer.LaunchModeActivity;
 import edu.gsu.httpscs.nipuna2017summer.NotificationActivity;
 import edu.gsu.httpscs.nipuna2017summer.Patch9Activity;
 import edu.gsu.httpscs.nipuna2017summer.R;
@@ -41,7 +42,7 @@ contentList = new ArrayList<String>();
         contentList.add("C");
         contentList.add("A");
         contentList.add("B");
-        contentList.add("C");
+        contentList.add("LaunchMode");
         contentList.add("A");
         contentList.add("B");
         contentList.add("C");
@@ -89,7 +90,10 @@ contentList = new ArrayList<String>();
                         Intent intent4 = new Intent(getActivity(), AdvanceListViewActivity.class);
                         startActivity(intent4);
                         break;
-
+                    case 8:
+                        Intent intent8 = new Intent(getActivity(), LaunchModeActivity.class);
+                        startActivity(intent8);
+                        break;
                     default:
                 }
             }

@@ -6,4 +6,10 @@
     android:layout_height="match_parent"
     tools:context="edu.gsu.httpscs.nipuna2017summer.LaunchModeActivity">
 
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Test"/>
+
 </android.support.constraint.ConstraintLayout>
