@@ -13,6 +13,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import edu.gsu.httpscs.nipuna2017summer.ActivityA;
 import edu.gsu.httpscs.nipuna2017summer.AdvanceListViewActivity;
 import edu.gsu.httpscs.nipuna2017summer.LaunchModeActivity;
 import edu.gsu.httpscs.nipuna2017summer.NotificationActivity;
@@ -91,7 +92,7 @@ contentList = new ArrayList<String>();
                         startActivity(intent4);
                         break;
                     case 8:
-                        Intent intent8 = new Intent(getActivity(), LaunchModeActivity.class);
+                        Intent intent8 = new Intent(getActivity(), ActivityA.class);
                         startActivity(intent8);
                         break;
                     default:
