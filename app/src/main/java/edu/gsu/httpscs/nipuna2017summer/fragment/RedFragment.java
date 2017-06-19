@@ -3,11 +3,13 @@ package edu.gsu.httpscs.nipuna2017summer.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import edu.gsu.httpscs.nipuna2017summer.R;
+import edu.gsu.httpscs.nipuna2017summer.util.UtilLog;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -54,6 +56,8 @@ public class RedFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        //Log.d("Fragment","onCreate");
+        UtilLog.d("Fragment","onCreate");
     }
 
     @Override

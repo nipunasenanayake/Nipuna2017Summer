@@ -15,7 +15,6 @@ import java.util.ArrayList;
 
 import edu.gsu.httpscs.nipuna2017summer.ActivityA;
 import edu.gsu.httpscs.nipuna2017summer.AdvanceListViewActivity;
-import edu.gsu.httpscs.nipuna2017summer.LaunchModeActivity;
 import edu.gsu.httpscs.nipuna2017summer.NotificationActivity;
 import edu.gsu.httpscs.nipuna2017summer.Patch9Activity;
 import edu.gsu.httpscs.nipuna2017summer.R;

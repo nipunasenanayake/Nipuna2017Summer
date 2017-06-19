@@ -3,6 +3,7 @@
     package="edu.gsu.httpscs.nipuna2017summer">
 
     <application
+        android:name=".NipunaApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -29,7 +30,6 @@
             android:launchMode="singleInstance"/>
         <activity android:name=".NotificationActivity" />
         <activity android:name=".AdvanceListViewActivity" />
-        <activity android:name=".LaunchModeActivity"></activity>
     </application>
 
 </manifest>
