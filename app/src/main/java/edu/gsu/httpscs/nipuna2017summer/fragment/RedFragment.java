@@ -56,8 +56,38 @@ public class RedFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-        //Log.d("Fragment","onCreate");
-        UtilLog.d("Fragment","onCreate");
+
+        UtilLog.d("Fragment","RedOnCreate");
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        UtilLog.d("Fragment","RedOnStart");
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        UtilLog.d("Fragment","RedOnResume");
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        UtilLog.d("Fragment","RedOnPause");
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        UtilLog.d("Fragment","RedOnStop");
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        UtilLog.d("Fragment","RedOnDestroy");
     }
 
     @Override

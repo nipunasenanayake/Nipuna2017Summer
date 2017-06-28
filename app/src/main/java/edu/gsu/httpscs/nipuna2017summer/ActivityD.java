@@ -38,7 +38,7 @@ public class ActivityD extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_d);
-        showToast("onCreate");
+        showToast("onCreateD");
         ButterKnife.bind(this);
 
     }
@@ -46,7 +46,7 @@ public class ActivityD extends BaseActivity {
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
-        showToast("onNewIntent");
+        showToast("onNewIntentD");
 
     }
 }

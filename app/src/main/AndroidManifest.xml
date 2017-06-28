@@ -20,16 +20,30 @@
         <activity android:name=".ViewPagerActivity" />
         <activity android:name=".ScaleTypeActivity" />
         <activity android:name=".Patch9Activity" />
-        <activity android:name=".ActivityA"
-            android:launchMode="standard"/>
-        <activity android:name=".ActivityB"
-            android:launchMode="singleTop"/>
-        <activity android:name=".ActivityC"
-            android:launchMode="singleTask"/>
-        <activity android:name=".ActivityD"
-            android:launchMode="singleInstance"/>
+        <activity
+            android:name=".ActivityA"
+            android:launchMode="standard" />
+        <activity
+            android:name=".ActivityB"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ActivityC"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ActivityD"
+            android:launchMode="singleInstance" />
         <activity android:name=".NotificationActivity" />
         <activity android:name=".AdvanceListViewActivity" />
+        <activity android:name=".AdvanceViewPagerActivity" />
+        <activity android:name=".ResultActivity1" />
+        <activity android:name=".ResultActivity2" />
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".RadioGroupActivity" />
+        <activity android:name=".CheckBoxActivity" />
+        <activity android:name=".DialogActivity" />
+        <activity android:name=".HandlerActivity" />
+        <activity android:name=".RunablehandlerActivity" />
+        <activity android:name=".AnimationActivity"></activity>
     </application>
 
 </manifest>
