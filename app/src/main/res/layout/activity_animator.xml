@@ -50,6 +50,7 @@
         android:rowCount="2"
         android:useDefaultMargins="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginLeft="25dp"
         >
 
         <Button

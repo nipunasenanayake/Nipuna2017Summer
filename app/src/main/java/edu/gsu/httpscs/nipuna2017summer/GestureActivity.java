@@ -14,6 +14,8 @@ import edu.gsu.httpscs.nipuna2017summer.util.UtilLog;
 public class GestureActivity extends BaseActivity implements View.OnTouchListener{
 
     private GestureDetector mGestureDetector;
+    private int sumX =0;
+    private int sumY =0;
 
     @BindView(R.id.activity_gesture_tv)
     TextView tv;
@@ -51,12 +53,40 @@ public class GestureActivity extends BaseActivity implements View.OnTouchListene
         @Override
         public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
             UtilLog.d("Gesture","onScroll");
+//            UtilLog.d("Gesture","distanceX:"+distanceX);
+//            UtilLog.d("Gesture","distanceY:"+distanceY);
+            sumX+=distanceX;
+            sumY+=distanceY;
             return super.onScroll(e1, e2, distanceX, distanceY);
         }
 
         @Override
         public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
             UtilLog.d("Gesture","onFling");
+            if (sumX<0){
+                if(Math.abs(sumX)>200){
+                    shortToast("You scroll from left to right");
+                }
+            }
+
+            if (sumX>0){
+                if(Math.abs(sumX)>200){
+                    shortToast("You scroll from right to left");
+                }
+            }
+
+            if (sumY<0){
+                if(Math.abs(sumY)>200){
+                    shortToast("You scroll from top to bottom");
+                }
+            }
+
+            if (sumY>0){
+                if(Math.abs(sumY)>200){
+                    shortToast("You scroll from bottom to top");
+                }
+            }
+
             return super.onFling(e1, e2, velocityX, velocityY);
         }
 
@@ -92,6 +122,7 @@ public class GestureActivity extends BaseActivity implements View.OnTouchListene
 
         @Override
         public boolean onSingleTapUp(MotionEvent e) {
+            UtilLog.d("Gesture","onSingleTapUp");
             return super.onSingleTapUp(e);
         }
     }
