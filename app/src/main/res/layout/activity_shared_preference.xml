@@ -25,12 +25,11 @@
         android:id="@+id/activity_sharedpref_email"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Email"
         android:layout_marginLeft="30dp"
             android:layout_marginRight="15dp"
         android:gravity="center"
-        android:textSize="30sp"
-            android:hint="Enter email"
+        android:textSize="20sp"
+            android:hint="Please enter email"
             android:inputType="textEmailAddress"
         />
 
@@ -54,13 +53,12 @@
             android:id="@+id/activity_sharedpref_password"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Email"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="15dp"
             android:gravity="center"
-            android:textSize="30sp"
-            android:hint="Enter password"
-            android:inputType="textWebPassword"
+            android:textSize="20sp"
+            android:hint="Please enter password"
+            android:inputType="textPassword"
             />
 
     </LinearLayout>
