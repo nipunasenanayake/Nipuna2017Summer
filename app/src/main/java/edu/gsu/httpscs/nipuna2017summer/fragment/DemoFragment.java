@@ -65,8 +65,7 @@ contentList = new ArrayList<String>();
         contentList.add("AnimatorActivity");
         contentList.add("Gesture");
         contentList.add("SharedPreferences");
-        contentList.add("Service");
-        contentList.add("Broadcast");
+        contentList.add("Service & Broadcast");
     }
 
 

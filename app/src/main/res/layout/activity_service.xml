@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.gsu.httpscs.nipuna2017summer.ServiceActivity">
+
+    <TextView
+        android:id="@+id/activity_service_tv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Waiting"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/activity_service_start"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_centerInParent="true"
+        android:text="Start service"
+        />
+
+    <Button
+        android:id="@+id/activity_service_stop"
+        android:layout_below="@+id/activity_service_start"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_centerInParent="true"
+        android:text="Stop service"
+        />
+
+
+</RelativeLayout>
