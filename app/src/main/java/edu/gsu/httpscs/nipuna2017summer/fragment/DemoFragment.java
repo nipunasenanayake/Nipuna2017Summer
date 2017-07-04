@@ -30,6 +30,7 @@ import edu.gsu.httpscs.nipuna2017summer.RadioGroupActivity;
 import edu.gsu.httpscs.nipuna2017summer.ResultActivity;
 import edu.gsu.httpscs.nipuna2017summer.RunablehandlerActivity;
 import edu.gsu.httpscs.nipuna2017summer.ScaleTypeActivity;
+import edu.gsu.httpscs.nipuna2017summer.ServiceActivity;
 import edu.gsu.httpscs.nipuna2017summer.SharedPreferenceActivity;
 import edu.gsu.httpscs.nipuna2017summer.ViewPagerActivity;
 import edu.gsu.httpscs.nipuna2017summer.adapter.ListNormalAdapter;
@@ -64,6 +65,8 @@ contentList = new ArrayList<String>();
         contentList.add("AnimatorActivity");
         contentList.add("Gesture");
         contentList.add("SharedPreferences");
+        contentList.add("Service");
+        contentList.add("Broadcast");
     }
 
 
@@ -167,6 +170,10 @@ contentList = new ArrayList<String>();
                     case 16:
                         Intent intent16 = new Intent(getActivity(), SharedPreferenceActivity.class);
                         startActivity(intent16);
+                        break;
+                    case 17:
+                        Intent intent17 = new Intent(getActivity(), ServiceActivity.class);
+                        startActivity(intent17);
                         break;
                     default:
                 }

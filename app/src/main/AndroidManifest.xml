@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.gsu.httpscs.nipuna2017summer">
 
+    <provider
+        android:name=".content.Provider"
+        android:authorities="edu.gsu.httpscs.nipuna2017summer"
+        android:exported="true" />
+
     <application
         android:name=".NipunaApplication"
         android:allowBackup="true"
@@ -46,7 +51,9 @@
         <activity android:name=".AnimationActivity" />
         <activity android:name=".AnimatorActivity" />
         <activity android:name=".GestureActivity" />
-        <activity android:name=".SharedPreferenceActivity"></activity>
+        <activity android:name=".SharedPreferenceActivity" />
+        <activity android:name=".ServiceActivity"/>
+        <service android:name=".TestService"/>
     </application>
 
 </manifest>

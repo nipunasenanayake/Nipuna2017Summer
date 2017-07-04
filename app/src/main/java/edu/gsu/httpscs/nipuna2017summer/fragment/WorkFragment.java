@@ -15,6 +15,7 @@ import android.widget.Toast;
 import butterknife.ButterKnife;
 import edu.gsu.httpscs.nipuna2017summer.R;
 import edu.gsu.httpscs.nipuna2017summer.adapter.ListNormalAdapter;
+import edu.gsu.httpscs.nipuna2017summer.dialog.CustomDialogQ3;
 import edu.gsu.httpscs.nipuna2017summer.util.UtilLog;
 
 public class WorkFragment extends Fragment {
@@ -46,7 +47,7 @@ public class WorkFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
@@ -85,7 +86,28 @@ public class WorkFragment extends Fragment {
         btnQ3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Quiz3", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getContext(), "Quiz3", Toast.LENGTH_SHORT).show();
+
+
+                final CustomDialogQ3 customDialog = new CustomDialogQ3(getContext(), new CustomDialogQ3.ICustomDialogQ3Listener() {
+                    @Override
+                    public void onOKClicked(String msg) {
+                        if (msg.equals("Yes") || msg.equals("No")) {
+                            Toast.makeText(getContext(), msg, Toast.LENGTH_SHORT).show();
+                        }else if (msg.equals("Exit")){
+                            System.exit(0);
+                        }
+                    }
+
+                    @Override
+                    public void onCancelClicked(String msg) {
+                        Toast.makeText(getContext(), "You clicked Cancel", Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+                customDialog.setCanceledOnTouchOutside(true);
+                customDialog.show();
+
             }
         });
 
